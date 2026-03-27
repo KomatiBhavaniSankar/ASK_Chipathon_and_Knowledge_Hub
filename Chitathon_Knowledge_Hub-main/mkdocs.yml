@@ -1,0 +1,61 @@
+site_name: Chipathon Knowledge Hub
+site_url: https://chipathonknowledgehub.example
+
+theme:
+  name: material
+  logo: assets/icon.jpg
+  favicon: assets/icon.jpg
+
+  palette:
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      primary: blue grey
+      accent: deep purple
+
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: blue
+      accent: deep orange
+
+nav:
+  - Home: index.md
+
+  - Getting Started:
+      - Overview: getting-started/overview.md
+      - Installation: getting-started/installation.md
+      - Environment Setup: getting-started/environment-setup.md
+      - Track Guide: getting-started/track-guide.md
+
+  - OpenROAD Fundamentals:
+      - Flow Overview: openroad-fundamentals/flow-overview.md
+      - RTL to GDS: openroad-fundamentals/rtl-to-gds.md
+      - Synthesis: openroad-fundamentals/synthesis.md
+      - Floorplanning: openroad-fundamentals/floorplanning.md
+      - Placement: openroad-fundamentals/placement.md
+      - Routing: openroad-fundamentals/routing.md
+      - Signoff: openroad-fundamentals/signoff.md
+
+  - Debugging:
+      - Overview: debugging-playbooks/overview.md
+      - Timing Failures: debugging-playbooks/timing-failures.md
+      - DRC Errors: debugging-playbooks/drc-errors.md
+
+  - Artifact Map:
+      - Overview: artifact-map/overview.md
+      - Logs: artifact-map/logs.md
+      - Reports: artifact-map/reports.md
+
+  - Submission:
+      - Checklist: submission/checklist.md
+
+  - FAQ:
+      - General: faq/general.md
+
+  - Chatbot:
+      - How it Works: chatbot/how-it-works.md

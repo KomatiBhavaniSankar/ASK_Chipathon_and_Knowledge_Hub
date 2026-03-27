@@ -1,0 +1,105 @@
+# ---------------------------
+# Python
+# ---------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.env/
+.env.*/
+.ask/
+Ask/
+*.venv/
+.venv/
+env/
+ENV/
+
+# Byte-compiled / optimized / DLL files
+*.so
+*.dll
+*.dylib
+*.pyd
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Logs
+logs/
+*.log
+
+# IDE / editor
+.vscode/
+.vscode/*
+.idea/
+*.swp
+*.swo
+*~
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# ---------------------------
+# Project-specific (RAG)
+# ---------------------------
+
+# Vector DB persistence
+chroma_db/
+chroma/
+*.chroma/
+
+# Local data / docs copies (optional – keep only if generated or large)
+data/
+tmp/
+temp/
+
+# Model / cache dirs (optional if you don’t want to commit them)
+.cache/
+huggingface/
+hf_cache/
+models/
+
+# Secrets
+.env
+*.secret
+*.key
