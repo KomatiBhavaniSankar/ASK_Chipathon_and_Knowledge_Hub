@@ -95,7 +95,7 @@ pip install -r requirements.txt
 
 ## Running the chatbot backend
 
-Before starting the API, run the ingestion step so the knowledge base is indexed into the vector store. The backend depends on that stored Chroma database to retrieve context for answers. [stackoverflow](https://stackoverflow.com/questions/61536466/pips-requirements-txt-best-practice)
+Before starting the API, run the ingestion step so the knowledge base is indexed into the vector store. The backend depends on that stored Chroma database to retrieve context for answers. 
 
 ### 1. Ingest the documents
 
@@ -116,7 +116,7 @@ uvicorn app:app --reload
 
 ## Running the documentation site
 
-To preview the knowledge hub locally, go to the documentation folder and run MkDocs. The site content is defined by `mkdocs.yml` and the markdown files inside `docs/`. [pip.pypa](https://pip.pypa.io/en/stable/cli/pip_freeze/)
+To preview the knowledge hub locally, go to the documentation folder and run MkDocs. The site content is defined by `mkdocs.yml` and the markdown files inside `docs/`. 
 
 ```bash
 cd ../Chitathon_Knowledge_Hub-main
