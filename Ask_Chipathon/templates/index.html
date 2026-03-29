@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ASK Chipathon Knowledge Hub</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div>
+        <h1>ASK Chipathon</h1>
+        <p class="sub">Knowledge Hub with Ollama and Groq support</p>
+      </div>
+      <button id="themeToggle" class="ghost-btn" type="button">Toggle theme</button>
+    </header>
+
+    <main class="layout">
+      <section class="card controls">
+        <h2>Settings</h2>
+
+        <label for="provider">Provider</label>
+        <select id="provider">
+          <option value="ollama">Ollama (Localhost)</option>
+          <option value="groq">Groq API</option>
+        </select>
+
+        <label for="model">Model</label>
+        <!-- default: Ollama local model; Groq model will be set by JS when provider = groq -->
+        <input
+          id="model"
+          type="text"
+          value="llama3"
+          placeholder="llama3 (Ollama) or llama-3.3-70b-versatile (Groq)"
+        />
+
+        <div id="apiKeyWrap" class="hidden">
+          <label for="apiKey">Groq API Key</label>
+          <input id="apiKey" type="password" placeholder="Enter your Groq API key" />
+        </div>
+
+        <label for="k">Top K Retrieval</label>
+        <input id="k" type="number" value="4" min="1" max="20" />
+      </section>
+
+      <section class="card chat">
+        <h2>Ask a question</h2>
+
+        <label for="question">Question</label>
+        <textarea
+          id="question"
+          rows="6"
+          placeholder="Ask your question here..."
+        ></textarea>
+
+        <div class="actions">
+          <button id="askBtn" class="primary-btn" type="button">Ask</button>
+          <button id="clearBtn" class="ghost-btn" type="button">Clear</button>
+        </div>
+
+        <div class="answer-wrap">
+          <h3>Response</h3>
+          <pre id="output">Waiting for your question...</pre>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
